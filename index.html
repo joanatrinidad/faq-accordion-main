@@ -29,8 +29,20 @@
       <section>
         <div class="sectionItems">
           <div class="title">
-            <img src="/assets/images/icon-star.svg" />
+            <img src="/assets/images/icon-star.svg" alt="icon-star" />
             <h1>FAQs</h1>
+          </div>
+          <div class="accordionOne">
+            <button class="accordion">
+              What is Frontend Mentor, and how will it help me?
+              <img src="/assets/images/icon-plus.svg" alt="icon-plus" />
+            </button>
+            <div class="panel">
+              Frontend Mentor offers realistic coding challenges to help
+              developers improve their frontend coding skills with projects in
+              HTML, CSS, and JavaScript. It's suitable for all levels and ideal
+              for portfolio building.
+            </div>
           </div>
         </div>
       </section>
@@ -41,5 +53,9 @@
       <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
       Coded by <a href="#">Your Name Here</a>.
     </footer> -->
+
+    <script type="module">
+      import { faq } from "/src/js/accordion.js";
+    </script>
   </body>
 </html>

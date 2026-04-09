@@ -1,7 +1,7 @@
 :root {
   --white: hsl(0, 100%, 100%);
   --purple-100: hsl(275, 100%, 97%);
-  ---purple-600: hsl(292, 16%, 49%);
+  --purple-600: hsl(292, 16%, 49%);
   --purple-950: hsl(292, 42%, 14%);
 }
 
@@ -10,6 +10,7 @@ body {
   font-family: "Work Sans", sans-serif;
   margin: 0%;
 }
+
 
 .container {
   background-color: rgba(235, 190, 255, 0.67);
@@ -52,4 +53,25 @@ section {
   display: flex;
   align-self: self-start;
   gap: 21px;
+}
+
+.accordionOne {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  cursor: pointer;
+  border-bottom: 2px solid #dadada;
+  padding-bottom: 12px;
+  padding-top: 12px;
+}
+
+.accordionOne button {
+  background-color: var(--white);
+  border: 0;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.panel {
+  display: none;
 }
