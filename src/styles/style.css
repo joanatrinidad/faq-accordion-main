@@ -66,6 +66,10 @@ section {
   padding-top: 12px;
 }
 
+.accordion {
+  text-align: left;
+}
+
 .accordionOne button {
   background-color: var(--white);
   border: 0;
