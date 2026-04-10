@@ -56,6 +56,21 @@
 
     <script type="module">
       import { faq } from "/src/js/accordion.js";
+      let accordion = document.getElementsByClassName("accordion");
+      let i;
+
+      for (i = 0; i < accordion.length; i++) {
+        accordion[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          let panel = this.nextElementSibling;
+
+          if (panel.style.display === "block") {
+            panel.style.display = "none";
+          } else {
+            panel.style.display = "block";
+          }
+        });
+      }
     </script>
   </body>
 </html>
