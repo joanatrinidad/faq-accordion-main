@@ -74,6 +74,11 @@ section {
   justify-content: space-between;
   align-items: center;
   background-color: #fff;
+  border: 0;
+}
+
+button.accordion {
+  padding: 0;
 }
 
 .panel {
@@ -82,4 +87,10 @@ section {
 
 .accordion.active {
   text-align: left;
+}
+
+.accordion span {
+  font-weight: 600;
+  font-family: "Work Sans", sans-serif;
+  font-size: 18px;
 }
