@@ -66,7 +66,7 @@
               potential employers!
             </div>
           </div>
-          <div class="accordionOne">
+          <div class="accordionTwo">
             <button class="accordion">
               <span
                 >How can I get help if I'm stuck on a Frontend Mentor
@@ -91,6 +91,14 @@
       for (i = 0; i < accordion.length; i++) {
         accordion[i].addEventListener("click", function () {
           this.classList.toggle("active");
+
+          let icon = this.querySelector("img");
+          if (this.classList.contains("active")) {
+            icon.src = "/assets/images/icon-minus.svg";
+          } else {
+            icon.src = "/assets/images/icon-plus.svg";
+          }
+
           let panel = this.nextElementSibling;
 
           if (panel.style.display === "block") {
